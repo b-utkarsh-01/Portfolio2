@@ -1,11 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 html, body {
   width: 100%;
   height: 100%;
+}
+
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+#contect_links div:hover {
+  background-color: sandybrown;
+}
+#contect_links div:hover:hover {
+  background-color: rgba(0, 0, 0, 0.608);
+  transform: scale(1.6);
+  margin: 0 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+#contect_links:has(div:hover) div:not(:hover) a img {
+  filter: blur(0.6px);
 }/*# sourceMappingURL=style.css.map */
