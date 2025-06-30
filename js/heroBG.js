@@ -20,10 +20,12 @@ if (isMobile()) {
     // remove all once triggered
     window.removeEventListener("click", playAudio);
     window.removeEventListener("mousemove", playAudio);
+    window.removeEventListener("scroll", playAudio); 
   };
 
   window.addEventListener("click", playAudio, { once: true });
   window.addEventListener("mousemove", playAudio, { once: true });
+  window.addEventListener("scroll", playAudio, { once: true });
 
   // ✅ Desktop: IntersectionObserver to pause/play
   const observer = new IntersectionObserver(
