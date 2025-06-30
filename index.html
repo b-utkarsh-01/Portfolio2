@@ -12,179 +12,212 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    <nav class="md:hidden">
-            <!-- Toggle Button -->
-            <button id="menuToggle"
-                class="fixed top-4 right-4 z-50 w-10 h-10 flex items-center justify-center bg-[#3d3e3f] text-white rounded-full  transition-all duration-500 ease-in-out">
-                <!-- Hamburger Icon -->
-                <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 transition-all duration-500 ease-in-out" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+    <nav class="">
+        <!-- Toggle Button -->
+        <button id="menuToggle"
+            class="fixed top-4 right-4 z-50 w-10 h-10 flex items-center justify-center bg-[#3d3e3f] text-white rounded-full transition-all duration-500 ease-in-out">
+            <!-- Hamburger Icon -->
+            <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 transition-all duration-500 ease-in-out" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
 
-                <!-- Close Icon -->
-                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 absolute opacity-0 scale-0 transition-all duration-500 ease-in-out" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+            <!-- Close Icon -->
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 absolute opacity-0 scale-0 transition-all duration-500 ease-in-out" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
 
-           <aside id="sidebar"
-  class="fixed top-0 left-0 h-screen w-[60%] bg-[#0a0a0f] text-white transform -translate-x-full transition-transform duration-500 z-40 p-6">
-
-                <div class="flex flex-col items-center gap-4 mb-10">
-                    <div class="flex flex-col items-center gap-2">
-                        <div class="w-[50%] aspect-[1/1] rounded-full bg-gray-400 p-[2%]">
-                            <img src="./assests/fevicon.png" alt="Profile Picture"
-                                class="w-full h-full object-cover rounded-full" />
-                        </div>
-                        <h2 class="text-[clamp(13px,3vw,3rem)] font-bold uppercase">
-                            utkarsh pathak
-                        </h2>
+        <aside id="sidebar" class="fixed top-0 left-0 h-screen w-[50%] bg-[#0a0a0f] text-white transform -translate-x-full transition-transform duration-500 z-40 p-6">
+            <div class="flex flex-col items-center gap-4 mb-10">
+                <div class="flex flex-col items-center gap-2">
+                    <div class="w-[50%] aspect-[1/1] rounded-full bg-gray-400 p-[3%]">
+                        <img src="./assests/fevicon.png" alt="Profile Picture"
+                            class="w-full h-full object-cover rounded-full" />
                     </div>
-
-                    <div id="contect_links" class="flex justify-around w-[90%] p-1 gap-2 rounded-full flex-wrap">
-                        <div id="x"
-                            class="group inline-block w-[2rem] h-[2rem] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
-                            <a href=""
-                                class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor"
-                                    class="w-[60%] h-auto transition-colors duration-300">
-                                    <path
-                                        d="M714.1 585.8L1169 0H1064L669.3 516.5 332.4 0H0l476.6 705.3L0 1227h105.9l417.3-560.1 356.3 560.1H1200L714.1 585.8zM589.1 670.8l-48.4-74.3L147 79.8h147.6l304.3 465.1 48.4 74.3 419.4 642.1H1009L589.1 670.8z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div id="github"
-                            class="group inline-block  w-[2rem] h-[2rem] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
-                            <a href="#"
-                                class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
-                                <svg viewBox="0 0 24 24"
-                                    class="w-[60%] h-auto fill-current transition-colors duration-300">
-                                    <path
-                                        d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div id="insta"
-                            class="group inline-block  w-[2rem] h-[2rem] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
-                            <a href="" class=" flex items-center justify-center w-full h-full">
-                                <svg viewBox="0 0 551.034 551.034" xmlns="http://www.w3.org/2000/svg"
-                                    class="rounded-[4px] w-[60%] h-auto fill-white bg-black group-hover:fill-black group-hover:bg-white transition-colors duration-300">
-                                    <path 
-                                        d="M275.517,133.014c-78.577,0-142.503,63.926-142.503,142.503s63.926,142.503,142.503,142.503s142.503-63.926,142.503-142.503S354.094,133.014,275.517,133.014z M275.517,371.581c-53.096,0-96.064-42.968-96.064-96.064s42.968-96.064,96.064-96.064s96.064,42.968,96.064,96.064S328.613,371.581,275.517,371.581z" />
-                                    <circle cx="418.31" cy="134.07" r="34.15" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div id="facebook"
-                            class="group inline-block  w-[2rem] h-[2rem] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
-                            <a href="./redirect/NotHaveFaceBook.html"
-                                class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
-                                    class="w-[60%] h-auto transition-colors duration-300">
-                                    <path
-                                        d="M279.20 288l14.22-92.66h-88.91V127.1c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.6 0 259.36 0c-73.14 0-121.06 44.38-121.06 124.72v70.62H89.09V288h49.21v224h100.17V288z" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div id="linkedin"
-                            class="group inline-block  w-[2rem] h-[2rem] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
-                            <a href="#"
-                                class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"
-                                    class="w-[60%] h-auto transition-colors duration-300">
-                                    <path
-                                        d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.28 107 0 82.7 0 53.9 0 24.6 24.28 0 54.14 0s54.14 24.6 54.14 53.9c0 28.8-24.28 53.1-54.14 53.1zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.23-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V148.9h88.96v40.8h1.3c12.4-23.5 42.6-48.2 87.68-48.2 93.8 0 111.1 61.8 111.1 142.3V448z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <h2 class="text-[clamp(1rem,1vw,9rem)] font-bold uppercase">
+                        utkarsh pathak
+                    </h2>
                 </div>
-                <div
-                    class="suppercase flex flex-col text-[clamp(16px,2.5vw,5rem)] font-semibold gap-6 text-gray-500 uppercase">
-                    <div>
-                        <a href="#home" class="flex items-center gap-2 hover:text-blue-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(12px,6vw,6rem)]" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M3 9.5L12 3l9 6.5" />
-                                <path d="M5 10v10h14V5" />
-                                <path d="M9 19V12h6v7" />
-                            </svg>
-                            Home</a>
-                    </div>
 
-                    <div>
-                        <a href="#about" class="flex items-center gap-2 hover:text-blue-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(12px,6vw,6rem)]" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                <circle cx="12" cy="7" r="4" />
-                            </svg>
-                            About</a>
-                    </div>
-
-                    <div>
-                        <a href="#skills" class="flex text-gray-500 items-center gap-2 hover:text-blue-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(12px,6vw,6rem)]" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.591 1.1c1.527-.855 3.355.973 2.5 2.5a1.724 1.724 0 001.1 2.59c1.756.427 1.756 2.925 0 3.352a1.724 1.724 0 00-1.1 2.59c.855 1.527-.973 3.355-2.5 2.5a1.724 1.724 0 00-2.59 1.099c-.427 1.756-2.925 1.756-3.352 0a1.724 1.724 0 00-2.59-1.1c-1.527.855-3.355-.973-2.5-2.5a1.724 1.724 0 00-1.1-2.59c-1.756-.427-1.756-2.925 0-3.352a1.724 1.724 0 001.1-2.59c-.855-1.527.973-3.355 2.5-2.5a1.724 1.724 0 002.59-1.1z" />
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-
-                            Skills</a>
-                    </div>
-
-                    <div>
-                        <a href="#projects" class="flex items-center gap-2 hover:text-blue-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                                class="h-[clamp(12px,6vw,6rem)]">
-                                <!-- Folder base -->
-                                <path d="M3 7a2 2 0 012-2h5l2 2h9a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
-
-                                <!-- Papers inside the folder -->
-                                <path d="M8 11h8" />
-                                <path d="M8 14h6" />
-                            </svg>
-                            Projects</a>
-                    </div>
-
-                    <div>
-                        <a href="#contact" class="flex items-center hover:text-blue-400 gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                                class="h-[clamp(12px,6vw,6rem)]">
+                <div id="contect_links" class="flex justify-around w-[90%] p-1 gap-2 rounded-full flex-wrap">
+                    <div id="x"
+                        class="group inline-block w-[clamp(13px,3vw,3.5rem)] h-[clamp(13px,3vw,3.5rem)] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
+                        <a href=""
+                            class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" fill="currentColor"
+                                class="w-[60%] h-auto transition-colors duration-300">
                                 <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57A2 2 0 0 1 22 16.92z" />
+                                    d="M714.1 585.8L1169 0H1064L669.3 516.5 332.4 0H0l476.6 705.3L0 1227h105.9l417.3-560.1 356.3 560.1H1200L714.1 585.8zM589.1 670.8l-48.4-74.3L147 79.8h147.6l304.3 465.1 48.4 74.3 419.4 642.1H1009L589.1 670.8z" />
                             </svg>
+                        </a>
+                    </div>
 
-                            Contact</a>
+                    <div id="github"
+                        class="group inline-block w-[clamp(13px,3vw,3.5rem)] h-[clamp(13px,3vw,3.5rem)] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
+                        <a href="#"
+                            class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" class="w-[60%] h-auto fill-current transition-colors duration-300">
+                                <path
+                                    d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div id="insta"
+                        class="group inline-block w-[clamp(13px,3vw,3.5rem)] h-[clamp(13px,3vw,3.5rem)] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
+                        <a href="" class="flex items-center justify-center w-full h-full">
+                            <svg viewBox="0 0 551.034 551.034" xmlns="http://www.w3.org/2000/svg"
+                                class="rounded-[4px] w-[60%] h-auto fill-white bg-black group-hover:fill-black group-hover:bg-white transition-colors duration-300">
+                                <path
+                                    d="M275.517,133.014c-78.577,0-142.503,63.926-142.503,142.503s63.926,142.503,142.503,142.503s142.503-63.926,142.503-142.503S354.094,133.014,275.517,133.014z M275.517,371.581c-53.096,0-96.064-42.968-96.064-96.064s42.968-96.064,96.064-96.064s96.064,42.968,96.064,96.064S328.613,371.581,275.517,371.581z" />
+                                <circle cx="418.31" cy="134.07" r="34.15" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div id="facebook"
+                        class="group inline-block w-[clamp(13px,3vw,3.5rem)] h-[clamp(13px,3vw,3.5rem)] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
+                        <a href="./redirect/NotHaveFaceBook.html"
+                            class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"
+                                class="w-[60%] h-auto transition-colors duration-300">
+                                <path
+                                    d="M279.20 288l14.22-92.66h-88.91V127.1c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.6 0 259.36 0c-73.14 0-121.06 44.38-121.06 124.72v70.62H89.09V288h49.21v224h100.17V288z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div id="linkedin"
+                        class="group inline-block w-[clamp(13px,3vw,3.5rem)] h-[clamp(13px,3vw,3.5rem)] rounded-full overflow-hidden bg-gray-600 flex items-center justify-center">
+                        <a href="#"
+                            class="flex items-center justify-center w-full h-full text-black group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"
+                                class="w-[60%] h-auto transition-colors duration-300">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.28 107 0 82.7 0 53.9 0 24.6 24.28 0 54.14 0s54.14 24.6 54.14 53.9c0 28.8-24.28 53.1-54.14 53.1zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.23-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V148.9h88.96v40.8h1.3c12.4-23.5 42.6-48.2 87.68-48.2 93.8 0 111.1 61.8 111.1 142.3V448z" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
-            </aside>
-        </nav>
-    <main class="h-full w-full">
-        
-<section id="heroSection" class="h-screen w-screen bg-green-400 overflow-hidden relative">
-    <div class="bg-[url('./assests/heroMobile2.png')] h-full w-full bg-cover bg-center md:hidden flex items-start gap-2 flex-col justify-center px-6">
-        <h1 class=""><b class="uppercase w-[50%] text-[2rem] font-bold text-[#a1a5a6]">utkarsh pathak</b></h1>
-        <span>helllooo</span>
-    </div>
-</section>
-    </main>
+            </div>
+            <div class="suppercase flex flex-col text-[clamp(1.5rem,2.5vw,5rem)] font-semibold gap-6 text-gray-500 uppercase">
+                <div>
+                    <a href="#home" class="text-[clamp(13px,2vw,3rem)] flex items-center gap-2 hover:text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(13px,3vw,3.5rem)]" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M3 9.5L12 3l9 6.5" />
+                            <path d="M5 10v10h14V5" />
+                            <path d="M9 19V12h6v7" />
+                        </svg>
+                        Home</a>
+                </div>
 
+                <div>
+                    <a href="#about" class=" text-[clamp(13px,2vw,3rem)]  flex items-center gap-2 hover:text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(13px,3vw,3.5rem)]" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        About</a>
+                </div>
+
+                <div>
+                    <a href="#skills" class=" text-[clamp(13px,2vw,3rem)]  flex text-gray-500 items-center gap-2 hover:text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-[clamp(13px,3vw,3.5rem)]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.591 1.1c1.527-.855 3.355.973 2.5 2.5a1.724 1.724 0 001.1 2.59c1.756.427 1.756 2.925 0 3.352a1.724 1.724 0 00-1.1 2.59c.855 1.527-.973 3.355-2.5 2.5a1.724 1.724 0 00-2.59 1.099c-.427 1.756-2.925 1.756-3.352 0a1.724 1.724 0 00-2.59-1.1c-1.527.855-3.355-.973-2.5-2.5a1.724 1.724 0 00-1.1-2.59c-1.756-.427-1.756-2.925 0-3.352a1.724 1.724 0 001.1-2.59c-.855-1.527.973-3.355 2.5-2.5a1.724 1.724 0 002.59-1.1z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+
+                        Skills</a>
+                </div>
+
+                <div>
+                    <a href="#projects" class=" text-[clamp(13px,2vw,3rem)] flex items-center gap-2 hover:text-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-[clamp(13px,3vw,3.5rem)]">
+                            <!-- Folder base -->
+                            <path d="M3 7a2 2 0 012-2h5l2 2h9a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+
+                            <!-- Papers inside the folder -->
+                            <path d="M8 11h8" />
+                            <path d="M8 14h6" />
+                        </svg>
+                        Projects</a>
+                </div>
+
+                <div>
+                    <a href="#contact" class=" text-[clamp(13px,2vw,3rem)]  flex items-center hover:text-blue-400 gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-[clamp(13px,3vw,3.5rem)]">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57A2 2 0 0 1 22 16.92z" />
+                        </svg>
+
+                        Contact</a>
+                </div>
+            </div>
+        </aside>
+    </nav>
+    <main class="h-full w-full">
+        <section id="heroSection" class="h-full w-full bg-green-400 overflow-hidden relative">
+            <!--Mobile View-->
+            <div
+                class="bg-[url('./assests/heroMobile2.png')] h-screen w-screen bg-cover bg-center md:hidden flex items-start gap-2 flex-col justify-center px-6 md:hidden">
+                <h1 class="">
+                    <b class="uppercase w-[60%] text-[1.7rem] font-bold text-[#a1a5a6]">
+                        utkarsh pathak
+                    </b>
+                </h1>
+                <p class="uppercase text-[1.7rem] font-bold text-[#a1a5a6]" >I'm <span id="changingTextMobile" class="typewriter">Forntend devloper</span></p>
+            </div>
+
+            <!-- desktop view -->
+            <div class="audioBG relative">
+                <!-- Background video for desktop -->
+                <div class="hidden h-screen  w-screen md:block absolute inset-0 z-0 overflow-hidden">
+                    <video id="heroVideo" class="w-screen h-screen object-cover " autoplay loop muted playsinline>
+                        <source
+                            src="https://rr6---sn-ci5gup-cvhd.googlevideo.com/videoplayback?expire=1751310691&ei=A41iaI9rqafp2w-F7KqYDA&ip=85.237.200.101&id=o-AMfaEWQLInX5fpgPhTsgYH7GYjywVjOLNObClPrg1pCS&itag=399&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&siu=1&bui=AY1jyLMCFGOXs4waPQxk2Zw9_Vyzoi138aS_64gyHHUlGxmVtWZAPKC8VBmVOkOqAadAgzIiSA&spc=l3OVKcmq63Fo&vprv=1&svpuc=1&mime=video%2Fmp4&ns=LxvWn7hYLr6XlawfyY3_KfwQ&rqh=1&gir=yes&clen=226037261&dur=3720.000&lmt=1649746144952610&keepalive=yes&c=TVHTML5_SIMPLY_EMBEDDED_PLAYER&sefc=1&txp=443G434&n=u2BvFgWKRTekBw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgfypojKqgdsxE9tzz2UGgKtkPtO4L4fa9zf5Yj_uiDioCIQC_42moh-ORCCqCpZLOE3FWhiI2ZKZJWVvjhD4gvtmM6Q%3D%3D&title=code-fi+%2F+lofi+beats+to+code%2Frelax+to+%232&rm=sn-4g5ezl7e&rrc=104,80&fexp=24350590,24350737,24350827,24350961,24351316,24351318,24351528,24351907,24352102,24352156,24352220,24352236,24352258,24352262,24352322,24352334,24352335,24352390,24352392,24352447,24352457,24352466&req_id=c584467e500ea3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-ci5gup-civl7l&cms_redirect=yes&cmsv=e&met=1751289147,&mh=rA&mip=2401:4900:8822:5b1d:3c07:2584:3e8:470c&mm=29&mn=sn-ci5gup-cvhd&ms=rdu&mt=1751288725&mv=m&mvi=6&pl=50&rms=rdu,au&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgK1C3CUZ-gbbl2LwaIyXpX_IHWlSmw9atH0L2Pv07AsUCIEGFrzRNPggh4MlSyK_UluDN6-M76kB0j8tZjO3KsxmI"
+                            type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <audio id="heroAudio" autoplay loop>
+                        <source src="lofiBGsound.mp3" type="audio/mp3" />
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- Content on top -->
+                <div class=" flex flex-col items-start justify-center pl-[12rem] gap-6 h-screen w-[50%] z-10 relative ">
+                    <h1>
+                        <b class="uppercase text-[2.4rem] font-bold text-[#a1a5a6]">
+                            utkarsh pathak
+                        </b>
+                    </h1>
+                    <p class="uppercase text-[1.7rem] font-bold text-[#a1a5a6]" >I'm <span id="changingTextDesktop" class="typewriter">Forntend devloper</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full bg-green-400"></section>
+    </main>
+    <script src="./js/changeText.js"></script>
+    <script src="./js/heroBG.js"></script>
     <script src="./js/nav.js"></script>
 </body>
+
 </html>
