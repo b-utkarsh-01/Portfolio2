@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <nav class="">
         <!-- Toggle Button -->
         <button id="menuToggle"
@@ -172,7 +173,7 @@
         </aside>
     </nav>
     <main class="h-full w-full">
-        <section id="heroSection" class="h-full w-full bg-green-400 overflow-hidden relative">
+        <section id="heroSection" class="h-full w-full bg-gray-400 overflow-hidden relative">
             <!--Mobile View-->
             <div
                 class="bg-[url('./assests/heroMobile2.png')] h-screen w-screen bg-cover bg-center md:hidden flex items-start gap-2 flex-col justify-center px-6 md:hidden">
@@ -190,14 +191,13 @@
                 <div class="hidden h-screen  w-screen md:block absolute inset-0 z-0 overflow-hidden">
                     <video id="heroVideo" class="w-screen h-screen object-cover " autoplay loop muted playsinline>
                         <source
-                            src="https://rr6---sn-ci5gup-cvhd.googlevideo.com/videoplayback?expire=1751310691&ei=A41iaI9rqafp2w-F7KqYDA&ip=85.237.200.101&id=o-AMfaEWQLInX5fpgPhTsgYH7GYjywVjOLNObClPrg1pCS&itag=399&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C271%2C278%2C313%2C394%2C395%2C396%2C397%2C398%2C399%2C400%2C401&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&siu=1&bui=AY1jyLMCFGOXs4waPQxk2Zw9_Vyzoi138aS_64gyHHUlGxmVtWZAPKC8VBmVOkOqAadAgzIiSA&spc=l3OVKcmq63Fo&vprv=1&svpuc=1&mime=video%2Fmp4&ns=LxvWn7hYLr6XlawfyY3_KfwQ&rqh=1&gir=yes&clen=226037261&dur=3720.000&lmt=1649746144952610&keepalive=yes&c=TVHTML5_SIMPLY_EMBEDDED_PLAYER&sefc=1&txp=443G434&n=u2BvFgWKRTekBw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgfypojKqgdsxE9tzz2UGgKtkPtO4L4fa9zf5Yj_uiDioCIQC_42moh-ORCCqCpZLOE3FWhiI2ZKZJWVvjhD4gvtmM6Q%3D%3D&title=code-fi+%2F+lofi+beats+to+code%2Frelax+to+%232&rm=sn-4g5ezl7e&rrc=104,80&fexp=24350590,24350737,24350827,24350961,24351316,24351318,24351528,24351907,24352102,24352156,24352220,24352236,24352258,24352262,24352322,24352334,24352335,24352390,24352392,24352447,24352457,24352466&req_id=c584467e500ea3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-ci5gup-civl7l&cms_redirect=yes&cmsv=e&met=1751289147,&mh=rA&mip=2401:4900:8822:5b1d:3c07:2584:3e8:470c&mm=29&mn=sn-ci5gup-cvhd&ms=rdu&mt=1751288725&mv=m&mvi=6&pl=50&rms=rdu,au&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRAIgK1C3CUZ-gbbl2LwaIyXpX_IHWlSmw9atH0L2Pv07AsUCIEGFrzRNPggh4MlSyK_UluDN6-M76kB0j8tZjO3KsxmI"
+                            src="./heroVideo.mp4"
                             type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
 
-                    <audio id="heroAudio" autoplay loop>
-                        <source src="lofiBGsound.mp3" type="audio/mp3" />
-                        Your browser does not support the audio element.
+                    <audio id="heroAudio" preload="auto" src="./lofiBGsound.mp3">
+                        <source src="lofiBGsound.mp3" type="audio/mp3">
                     </audio>
                 </div>
 
