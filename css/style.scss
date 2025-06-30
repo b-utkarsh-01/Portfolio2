@@ -16,6 +16,9 @@ html {
       transform: scale(1.6);
       margin: 0 0.5rem;
       transition: all 0.3s ease-in-out;
+      svg{
+        color: #a1a5a6;
+      }
     }
   }
 }
@@ -43,13 +46,10 @@ html {
 
 #sidebar {
   @media screen and (min-width: 1024px) {
-    width: 25%;
+    width: 30%;
     .ancartag{
       a{
         font-size:clamp(1rem,1vw,3rem);
-        svg{
-          height: clamp(1rem,1vw,3rem);
-        }
       }
     }
   }

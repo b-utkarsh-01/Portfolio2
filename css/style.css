@@ -14,6 +14,9 @@ html {
   margin: 0 0.5rem;
   transition: all 0.3s ease-in-out;
 }
+#contect_links div:hover:hover svg {
+  color: #a1a5a6;
+}
 
 .typewriter::after {
   content: "|";
@@ -32,12 +35,9 @@ html {
 }
 @media screen and (min-width: 1024px) {
   #sidebar {
-    width: 25%;
+    width: 30%;
   }
   #sidebar .ancartag a {
     font-size: clamp(1rem, 1vw, 3rem);
-  }
-  #sidebar .ancartag a svg {
-    height: clamp(1rem, 1vw, 3rem);
   }
 }/*# sourceMappingURL=style.css.map */
