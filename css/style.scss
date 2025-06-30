@@ -43,28 +43,12 @@ html {
 
 #sidebar {
   @media screen and (min-width: 1024px) {
-    width: 30%;
-    
-    #contect_links {
-      .suppercase {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #9ca3af;
-
-        a {
-          font-size: clamp(8px,.3vw,1rem);
-
-          svg {
-            height: clamp(10px,12vw,.7rem);
-          }
-
-          &:hover {
-            color: #60a5fa;
-          }
+    width: 25%;
+    .ancartag{
+      a{
+        font-size:clamp(1rem,1vw,3rem);
+        svg{
+          height: clamp(1rem,1vw,3rem);
         }
       }
     }
