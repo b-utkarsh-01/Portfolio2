@@ -8,23 +8,12 @@ html {
 }
 
 #contect_links {
-
   div:hover {
-    background-color: sandybrown;
     &:hover {
-      background-color: rgba(0, 0, 0, 0.608);
+      background-color: rgba(255, 255, 255, 0.608);
       transform: scale(1.6);
       margin: 0 0.5rem;
       transition: all 0.3s ease-in-out;
     } 
-  }
-  &:has(div:hover) {
-    div:not(:hover) {
-      a{
-        img{
-          filter: blur(.6px);
-        }
-      }
-    }
   }
 }
