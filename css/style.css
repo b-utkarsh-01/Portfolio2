@@ -8,6 +8,11 @@ html {
   font-size: clamp(14px, 1.5vw, 18px);
 }
 
+#contect_links svg {
+  width: clamp(2.5rem, 2vw, 3.5rem);
+  height: clamp(2.5rem, 2vw, 3.5rem);
+  padding: 6px;
+}
 #contect_links div:hover:hover {
   background-color: rgb(0, 0, 0);
   transform: scale(1.6);
@@ -15,7 +20,7 @@ html {
   transition: all 0.3s ease-in-out;
 }
 #contect_links div:hover:hover svg {
-  color: #a1a5a6;
+  color: #c0c0c0;
 }
 
 .typewriter::after {
@@ -37,7 +42,14 @@ html {
   #sidebar {
     width: 30%;
   }
-  #sidebar .ancartag a {
-    font-size: clamp(1rem, 1vw, 3rem);
+  #sidebar .ancartag div a {
+    font-size: clamp(1rem, 1vw, 2.5rem);
   }
+}
+
+#ancartag div a {
+  font-size: clamp(1rem, 0.5vw, 2rem);
+}
+#ancartag div a svg {
+  height: clamp(3px, 0.3vw, 0.5rem);
 }/*# sourceMappingURL=style.css.map */
